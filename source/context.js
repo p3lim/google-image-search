@@ -1,6 +1,6 @@
 var url = 'http://www.google.com/searchbyimage?image_url=';
 
-contextMenus.create({
+chrome.contextMenus.create({
 	'title': 'Search Google using this image',
 	'contexts': ['image'],
 	'id': 'contextMenu',
@@ -8,7 +8,7 @@ contextMenus.create({
 		var src = info.srcUrl;
 		if(src.indexOf('data:') != 0){
 			chrome.tabs.create({
-				'url': url + encodeURIComponent(src)
+				'url': url + encodeURIComponent(src),
 				'index': tab.index + 1,
 			});	
 		}
