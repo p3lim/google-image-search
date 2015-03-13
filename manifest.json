@@ -4,13 +4,13 @@
 	"description": "Quickly search by image using Google",
 	"version": "1.0",
 	"icons": {
-		"16": "icon.png"
+		"16": "assets/images/icon16.png"
 	},
 	"permissions": [
 		"contextMenus"
 	],
 	"background": {
 		"persistent": false,
-		"scripts": ["context.js"]
+		"scripts": ["assets/js/background.js"]
 	}
 }
