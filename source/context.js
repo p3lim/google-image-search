@@ -10,8 +10,13 @@ chrome.contextMenus.onClicked.addListener(function(info, tab){
 	}
 });
 
-chrome.contextMenus.create({
-	'title': 'Search Google using this image',
-	'contexts': ['image'],
-	'id': 'contextMenu'
-});
+var onInitialize = function(){
+	chrome.contextMenus.create({
+		'title': 'Search Google using this image',
+		'contexts': ['image'],
+		'id': 'contextMenu'
+	});
+};
+
+chrome.runtime.onStartup.addListener(onInitialize);
+chrome.runtime.onInstalled.addListener(onInitialize);
