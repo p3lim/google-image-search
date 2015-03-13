@@ -4,7 +4,7 @@
 	"description": "Quickly search by image using Google",
 	"version": "1.0",
 	"background": {
-		"persistent": true,
+		"persistent": false,
 		"scripts": ["context.js"]
 	},
 	"icons": {
@@ -12,4 +12,3 @@
 	},
 	"permissions": ["contextMenus"]
 }
-	
