@@ -1,4 +1,4 @@
-var url = 'http://www.google.com/searchbyimage?image_url=';
+var url = 'https://www.google.com/searchbyimage?image_url=';
 
 chrome.contextMenus.onClicked.addListener(function(info, tab){
 	var src = info.srcUrl;
